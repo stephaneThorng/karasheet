@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.TextField?>
+<VBox alignment="TOP_LEFT" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="io.sthorng.presenter.ui.UiController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+    </padding>
+    <VBox>
+        <Label fx:id="templateLabel"/>
+        <HBox spacing="20.0">
+            <TextField fx:id="templateTextField"/>
+            <Button fx:id="templateButton" text="Parcourir"/>
+        </HBox>
+    </VBox>
+
+    <VBox>
+        <children>
+            <Label fx:id="sourceLabel"/>
+            <HBox spacing="20.0">
+                <TextField fx:id="sourceTextField"/>
+                <Button fx:id="sourceButton" text="Parcourir"/>
+            </HBox>
+        </children>
+    </VBox>
+
+    <VBox>
+        <children>
+            <Label fx:id="destinationLabel"/>
+            <HBox spacing="20.0">
+                <TextField fx:id="destinationTextField"/>
+                <Button fx:id="destinationButton" text="Parcourir"/>
+            </HBox>
+        </children>
+    </VBox>
+
+    <HBox spacing="20.0">
+        <Button fx:id="generateButton" text="Générer"/>
+        <Label fx:id="generateLabel"/>
+    </HBox>
+
+</VBox>
